@@ -12,6 +12,12 @@
     justify-content: center;
 }
 .navItem {
-    padding: 1 em;
+    padding: 2em;
     list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
 }
