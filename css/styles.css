@@ -21,3 +21,92 @@ a {
 a:hover {
     color: orange;
 }
+.products {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+    grid-template-areas:
+        ". donut ."
+        ". granola ."
+        ". coffee ."
+        ". one ."
+        ". two ."
+        ". three ."
+        ". four ."
+        ". five .";
+}
+img {
+    width: 100%;
+}
+.donut {
+    grid-area: donut;
+}
+.granola {
+    grid-area: granola;
+}
+.coffee {
+    grid-area: coffee;
+}
+.he {
+    grid-area: one;
+}
+.lngray {
+    grid-area: two;
+}
+.lnnavy {
+    grid-area: three;
+}
+.athlete {
+    grid-area: four;
+}
+.hn {
+    grid-area: five;
+}
+.card {
+    margin-bottom: 25px;
+}
+footer {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "address hours contact socials";
+    margin: 10px;
+}
+.address {
+    grid-area: address;
+}
+.hours {
+    grid-area: hours;
+}
+.contact {
+    grid-area: contact;
+}
+.socials {
+    grid-area: socials;
+}
+@media screen and (min-width: 540px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "donut granola"
+            "coffee one"
+            "two three"
+            "four five";
+    }
+    .card {
+        margin: 25px;
+    }
+}
+@media screen and (min-width: 720px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "donut granola coffee"
+            "one two three"
+            "four five .";
+    }
+    .card {
+        margin: 25px;
+    }
+}
