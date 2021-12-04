@@ -51,8 +51,12 @@ a { text-decoration: none; }
     height: 50%;
     width: 100%;
 }
-
 .order-button {
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.order-button button{
     transition: all 0.5s ease-in-out;
     background-image: linear-gradient(30deg, #ffbd53 50%, #62cbff 50%);
     background-size: 298%;
@@ -62,16 +66,11 @@ a { text-decoration: none; }
     border: none;
     padding: 10px 15px;
     border-radius: 6px;
-}
-
-.order-button a {
     color: #414141;
-    font-weight: bolder;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 15px;
+    margin-top: 15px;
 }
 
-.order-button:hover, .order-button:focus {
+.order-button button:hover, .order-button button:focus {
     background-position: 0%;
 }
 
@@ -88,12 +87,10 @@ a { text-decoration: none; }
 .home-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     background-color: #FBF3D7;
     border-radius: 6px;
     margin: 15px 20px;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    padding: 15px;
 }
 
 .home-gallery-item img {
@@ -103,9 +100,8 @@ a { text-decoration: none; }
 .home-gallery-item {
     display: flex;
     flex-direction: column;
-    max-width: 175px;
     width: 150px;
-    margin: 10px auto;
+    margin: 15px auto;
     border: 1px solid white;
     border-radius: 6px;
 }
@@ -149,12 +145,12 @@ footer {
 .store-info {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     border: 3px solid #ffbd53;
     background-color: #ffc66b;
     border-radius: 6px;
     color: #414141;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -162,21 +158,18 @@ footer {
     font-family: 'Yrsa', serif;
 }
 
-.store-info p, span a {
+.store-info p {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
+    font-size: 15px;
     color: #414141;
 }
-.store-info-item span {
-    padding-left: 25px;
-}
-.store-info-item h3 p a{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
+
 .store-info-item {
-    margin: 10px;
+    margin: 10px 15px;
 }
+
 /*gallery page*/
 .gallery {
     display: flex;
@@ -214,7 +207,6 @@ footer {
 }
 /*gallery page^*/
 
-
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -233,54 +225,6 @@ footer {
     width: 100%;
     border-radius: 10px;
 }
-
-
-.address {
-    grid-area: address;
-    border: #23B7Ff solid;
-    width: 21vw;
-    box-sizing: border-box;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    overflow-wrap: break-word;
-    background:#23B7Ff;
-    border-radius: 7px;
-}
-.hours {
-    grid-area: hours;
-    border: #23B7Ff solid;
-    width: 21vw;
-    box-sizing: border-box;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    overflow-wrap: break-word;
-    background:#23B7Ff;
-    border-radius: 7px;
-}
-.contact {
-    grid-area: contact;
-    border: #23B7Ff solid;
-    width: 21vw;
-    box-sizing: border-box;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    overflow-wrap: break-word;
-    background:#23B7Ff;
-    border-radius: 7px;
-}
-.socials {
-    grid-area: socials;
-    border: #23B7Ff solid;
-    width: 21vw;
-    box-sizing: border-box;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    overflow-wrap: break-word;
-    background:#23B7Ff;
-    border-radius: 7px;
-}
-
-/*footer area*/
 
 .product-card button {
     height: 30px;
@@ -376,7 +320,6 @@ footer {
 /* athlete shirt^*/
 
 /*checkout css*/
-
 
 .form-wrapper{
      width: 90%;
@@ -523,6 +466,22 @@ font-family: 'Nunito Sans';
         margin-top: 0;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .store-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .store-info-item {
+        margin: 20px auto;
+    }
+    .home-gallery-item {
+        margin: 15px auto;
+    }    
+}
+
 @media screen and (min-width: 720px) {
     .products {
         display: flex;
@@ -534,20 +493,46 @@ font-family: 'Nunito Sans';
         margin: 25px;
         width: 27%;
     }
+    .donuts-doorsteps {
+        display: flex;
+        height: 150px;
+    }
+
+    .donuts-doorsteps span {
+        width: 70%;
+        max-width: 670px;
+    }
+
     .donuts-doorsteps img {
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
     }
-    .about-us {
-        margin: 10px 20px;
+
+    .order-button {
+        align-self: flex-end;
+        margin: auto;
     }
-    .home-gallery {
-        margin-bottom: 10px;
+
+    .order-button button {
+        width: 100%;
+        height: 60px;
+        margin-top: 15px;
     }
+
     .gallery-item {
         width: 33%;
     }
     .gallery p {
         padding-left: 10%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .home-gallery-item {
+        width: 15vw;
+        max-width: 200px;
+    }
+    .home-gallery-item button {
+        height: 40px;
     }
 }
