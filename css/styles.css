@@ -208,6 +208,87 @@ footer {
     width: 100%;
 }
 
+
+/*checkout css*/
+
+
+.form-wrapper{
+     width: 80%;
+     display: flex-column;
+     background: #FE9A50;
+   padding: 40px 20px; 
+   box-sizing: border-box;
+   margin: auto;
+   margin-top: 10%;
+   border-radius: 10px;
+   margin-bottom: 10%;
+  
+}
+
+
+.form-wrapper img{
+
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 5%;
+    
+  
+
+
+}
+.form-wrapper h1{
+    
+   color: black; 
+   text-align: center;
+    margin-bottom: 20px;}
+
+.form-wrapper p{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding-top: 5%;
+
+}
+input{width: 100%; 
+  background: none; 
+  border: 1.5px solid #FBF3D7 ;
+   
+   padding: 6px 15px;
+   border-radius: 3px; 
+    box-sizing: border-box;
+     margin-bottom: 20px; 
+     font-size: 16px;
+      color: #fff;}
+
+
+
+
+::placeholder{
+    color: #FBF3D7;
+}
+
+.form-wrapper a{
+    padding: 0.5rem 2rem;
+    border: 1px #FBF3D7 solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+    padding-left: 40%;
+    padding-right: 40%;
+    }
+
+.form-wrapper a:hover{
+    background: #23B7Ff;
+    
+}
+
+
 /*checkout css^*/
 
 /*complete page css*/
