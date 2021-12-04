@@ -304,10 +304,10 @@ footer {
 .shopcnt {
     display: flex;
     flex-direction: column;
-    width: 100%;
     background-color:#FE9A50;
-    border-radius: 5%;
+    border-radius: 6px;
     overflow: hidden;
+    margin: 1%;
 }
 .product-card h2, .product-card p {
     font-family: 'Yrsa', serif;
