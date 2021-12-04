@@ -236,6 +236,7 @@ footer {
     border-radius: 6px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
+    color:#414141;
 }
 .product-card button:hover, .product-card button:focus {
     background-position: 100%;
@@ -341,13 +342,13 @@ form img {
 
 .form-wrapper h1{
     
-   color: black; 
+   color: #414141; 
    text-align: center;
     margin-bottom: 20px;}
 
 .form-wrapper p{
   font-size: 20px;
-  color: black;
+  color: #414141;
   text-align: center;
   padding-top: 5%;
 
