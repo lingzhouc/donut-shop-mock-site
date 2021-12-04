@@ -17,6 +17,7 @@ nav {
     border: 2px solid #ef6593; 
     border-radius: 6px;
     background-color: #ef6593;
+    border: 2px solid #ffc66b; 
 }
 
 nav a { color: black; padding: 8px 0px; transition: all 500ms;}
@@ -30,9 +31,8 @@ a { text-decoration: none; }
 .donuts-doorsteps {
     background-color: white;
     font-family: 'Nunito Sans', sans-serif;
-    text-align: center;
-
 }
+
 .about-us h1 {
     font-family: 'Yrsa';
 }
@@ -40,8 +40,8 @@ a { text-decoration: none; }
     font-family: 'Nunito Sans';
 }
 .donuts-doorsteps img {
-    width: 100%;
     height: 50%;
+    margin: 10px 0;
 }
 
 .order-button {
@@ -56,7 +56,6 @@ a { text-decoration: none; }
 .order-button a {
     color: black;
 }
-
 
 .about-us a {
     color: black;
@@ -105,14 +104,10 @@ a { text-decoration: none; }
     margin-top: 10px;
     border: none;
     border-radius: 6px;
-    transition: all 0.5s ease-in-out;
-    background-image: linear-gradient(30deg, #ffbd53 50%, #62cbff 50%);
-    background-size: 298%;
-    background-position: 0%;
-    color: #414141;
+    background-color: #3a1c13;
+    color: white;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: bolder;
 }
 
 .home-gallery-item button:hover, .home-gallery-item button:focus {
@@ -311,7 +306,34 @@ footer a {
 }
 /* athlete shirt*/
 
-.flexcnt {
+footer {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "address hours contact socials";
+    margin: 10px;
+}
+.address {
+    grid-area: address;
+}
+.hours {
+    grid-area: hours;
+}
+.contact {
+    grid-area: contact;
+}
+.socials {
+    grid-area: socials;
+}
+.addtocart {
+    cursor: pointer;
+    min-width: 90%;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1%;
     display: flex;
     width: 100%;
     background:#FE9A50;
