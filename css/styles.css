@@ -28,7 +28,7 @@ a { text-decoration: none; }
 .donuts-doorsteps {
     background-color: white;
     font-family: 'Nunito Sans', sans-serif;
-    margin: 0 15px;
+    margin: 15px;
     color: #414141;
 }
 
@@ -214,8 +214,8 @@ span a {font-weight: bolder;}
 }
 
 .product-card {
-    margin: 5px;
-    margin-bottom: 25px;
+    margin: 15px;
+    padding: 20px 0 20px 0;
 }
 
 .product-card img{
@@ -247,43 +247,27 @@ span a {font-weight: bolder;}
 .hn {
     grid-area: five;
 }
-
-.addtocart {
-    cursor: pointer;
-    min-width: 90%;
-    padding: 10px 20px;
-    position: relative;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    color: #f1f1f1;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
 .product-card button {
     height: 12%;
     width: 100%;
     margin-top: 10px;
     border: none;
     border-radius: 6px;
-    background-color: #3a1c13;
-    color: white;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(30deg, #ffbd53 50%, #62cbff 50%);
+    background-size: 298%;
+    background-position: 0%;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
 }
 
 .product-card button:hover, .product-card button:focus {
-    background-color: #a06333;
+    background-position: 100%;
 }
 .product-card button a {
-    color: white;
+    color: #414141;
 }
+
 .product-card h2, .product-card p {
     font-family: 'Yrsa', serif;
 }
