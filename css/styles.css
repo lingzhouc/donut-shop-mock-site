@@ -192,6 +192,7 @@ footer p{
     padding-bottom: 2rem;
     overflow-wrap: break-word;
     background:#23B7Ff;
+    border-radius: 7px;
 }
 .hours {
     grid-area: hours;
@@ -202,6 +203,7 @@ footer p{
     padding-bottom: 2rem;
     overflow-wrap: break-word;
     background:#23B7Ff;
+    border-radius: 7px;
 }
 .contact {
     grid-area: contact;
@@ -212,6 +214,7 @@ footer p{
     padding-bottom: 2rem;
     overflow-wrap: break-word;
     background:#23B7Ff;
+    border-radius: 7px;
 }
 .socials {
     grid-area: socials;
@@ -222,6 +225,7 @@ footer p{
     padding-bottom: 2rem;
     overflow-wrap: break-word;
     background:#23B7Ff;
+    border-radius: 7px;
 }
 
 /*footer area*/
