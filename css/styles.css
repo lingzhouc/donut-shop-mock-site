@@ -263,7 +263,7 @@ footer {
 .shopcnt {
     display: flex;
     flex-direction: column;
-    background-color:#FE9A50;
+    background-color:#fbf3d7;
     border-radius: 6px;
     overflow: hidden;
     margin: 1%;
@@ -301,18 +301,23 @@ footer {
 
 .shopcnt a{
     margin-right: 30%;
-    padding: 0.5rem 8%;
+    padding: 0.7rem 8%;
     border: none;
     border-radius: 5%;
     text-decoration: none;
-    background-color: #FD9AC7;
-    transition: background 500ms ease;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(30deg, #ffbd53 50%, #62cbff 50%);
+    background-size: 298%;
+    background-position: 0%;
     text-align: center;
-    font-family: "Yrsa";
+    font-family: 'Nunito Sans', sans-serif;
+    color: #414141;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .shopcnt a:hover, .shopcnt a:focus{
-    background: #23B7Ff;
+    background-position: 100%;
 }
 
 /* athlete shirt^*/
