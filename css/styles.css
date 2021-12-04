@@ -4,7 +4,7 @@
     margin: 0px;
 }
 
-header { text-align: center; }
+header { text-align: center; height: 268px;}
 
 header img { width: 50%; max-width: 500px;}
 
@@ -49,7 +49,7 @@ a { text-decoration: none; }
 }
 
 .about-us {
-    background-color: ;
+    
 }
 
 .about-us a {
@@ -94,6 +94,19 @@ a { text-decoration: none; }
     font-weight: bolder;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
 .products {
     display: grid;
     grid-template-columns: 0.5fr 5fr 0.5fr;
@@ -107,12 +120,17 @@ a { text-decoration: none; }
         ". four ."
         ". five .";
 }
-img {
-    width: 100%;
+
+.product-card {
+    margin: 5px;
+    margin-bottom: 25px;
 }
-img, .card {
+
+.product-card img{
+    width: 100%;
     border-radius: 10px;
 }
+
 .donut {
     grid-area: donut;
 }
@@ -137,9 +155,7 @@ img, .card {
 .hn {
     grid-area: five;
 }
-.card {
-    margin-bottom: 25px;
-}
+
 footer {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr;
@@ -169,7 +185,7 @@ footer {
             "two three"
             "four five";
     }
-    .card {
+    .product-card {
         margin: 25px;
     }
 }
@@ -182,7 +198,7 @@ footer {
             "one two three"
             "four five .";
     }
-    .card {
+    .product-card {
         margin: 25px;
     }
 }
