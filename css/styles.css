@@ -175,34 +175,28 @@ footer {
 .socials {
     grid-area: socials;
 }
-.addtocart {
-    cursor: pointer;
-    min-width: 90%;
-    padding: 10px 20px;
-    position: relative;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    color: #f1f1f1;
-    font-size: 1rem;
-    text-decoration: none;
+.product-card button {
+    height: 12%;
+    width: 100%;
+    margin-top: 10px;
     border: none;
-    outline: none;
-    background-image: linear-gradient(30deg, #FE9A50 50%, #23B7FF 50%);
-    background-size: 298%;
-    background-repeat: no-repeat;
-    background-position: 0%;
+    border-radius: 6px;
+    background-color: #3a1c13;
+    color: white;
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
 }
-.addtocart:hover {
-    background-position: 100%;
-    color: #FE9A50;
-    border-color: #23B7FF;
+.product-card button:hover, .product-card button:focus {
+    background-color: #a06333;
+}
+.product-card button a {
+    color: white;
+}
+.product-card h2, .product-card p {
+    font-family: 'Yrsa', serif;
+}
+.product-card p {
+    font-size:larger;
 }
 .shopcnt img{
     width: 45%;
