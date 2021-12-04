@@ -14,16 +14,15 @@ nav {
     margin: 5px;
     font-family: 'Yrsa', serif;
     font-size: 20px;
-    border: 2px solid #ef6593; 
+    font-weight: bolder;
     border-radius: 6px;
-    background-color: #ef6593;
-    border: 3px solid #ffc66b; 
+    background-color: #ffc66b;
+    border: 3px solid #ffbd53; 
 }
 
 nav a { color: #414141; padding: 8px 0px; transition: all 500ms;}
-nav a:hover, nav a:focus { color:#ffc66b; }
 
-nav a:active { color: #ffa216; }
+nav a:hover, nav a:focus, nav a:active { color: #414141; text-decoration: underline; }
 
 a { text-decoration: none; }
 
@@ -33,7 +32,9 @@ a { text-decoration: none; }
     margin: 15px;
     color: #414141;
 }
-
+.about-us {
+    border-radius: 6px;
+    
 .about-us h2 {
     font-family: 'Yrsa';
     padding-bottom: 5px;
@@ -135,6 +136,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     border: 3px solid #ffbd53;
+    background-color: #ffc66b;
     border-radius: 6px;
     color: #414141;
     justify-content: space-between;
