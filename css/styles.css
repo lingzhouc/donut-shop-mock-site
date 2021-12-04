@@ -159,6 +159,34 @@ footer {
 .socials {
     grid-area: socials;
 }
+.addtocart {
+    cursor: pointer;
+    min-width: 90%;
+    padding: 15px 25px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #f1f1f1;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(30deg, #FE9A50 50%, #23B7FF 50%);
+    background-size: 298%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+.addtocart:hover {
+    background-position: 100%;
+    color: #FE9A50;
+    border-color: #23B7FF;
+}
 @media screen and (min-width: 540px) {
     .products {
         display: grid;
