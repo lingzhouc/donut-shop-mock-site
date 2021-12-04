@@ -106,7 +106,6 @@ a { text-decoration: none; }
     padding: 2em 4em 2em 4em;
     list-style: none;
 }
-
 .products {
     display: grid;
     grid-template-columns: 0.5fr 5fr 0.5fr;
@@ -122,6 +121,9 @@ a { text-decoration: none; }
 }
 img {
     width: 100%;
+}
+img, .card {
+    border-radius: 10px;
 }
 .donut {
     grid-area: donut;
