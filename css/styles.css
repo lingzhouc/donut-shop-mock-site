@@ -94,18 +94,43 @@ a { text-decoration: none; }
     font-weight: bolder;
 }
 
+/*gallery page*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    background: #FE9A50 ;
+    padding-top: 10%;
+    border-radius: 15px;
+   
 }
 
 .gallery-item {
     width: 250px;
+    padding: 1%;
+    
+    
 }
 
 .gallery-item img {
     width: 100%;
+    border-radius: 10px;
+    
 }
+
+.gallery h1{
+    padding-bottom: 5%;
+    padding-left: 7%;
+    font-size: 400%;
+    text-align: center;
+}
+
+.gallery p{
+    padding-bottom: 5%;
+    padding-left: 25%;
+    
+}
+/*gallery page^*/
+
 
 .products {
     display: grid;
