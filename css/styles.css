@@ -156,25 +156,76 @@ a { text-decoration: none; }
     grid-area: five;
 }
 
+/* footer area*/
 footer {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "address hours contact socials";
-    margin: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 1rem;
+    margin-left: 2%;
+    
+
+    
+}
+
+footer h3{
+    padding: auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+footer p{
+    padding: auto;
+    text-align: center;
+    
 }
 .address {
     grid-area: address;
+    border: #23B7Ff solid;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow-wrap: break-word;
+    background:#23B7Ff;
 }
 .hours {
     grid-area: hours;
+    border: #23B7Ff solid;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow-wrap: break-word;
+    background:#23B7Ff;
 }
 .contact {
     grid-area: contact;
+    border: #23B7Ff solid;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow-wrap: break-word;
+    background:#23B7Ff;
 }
 .socials {
     grid-area: socials;
+    border: #23B7Ff solid;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow-wrap: break-word;
+    background:#23B7Ff;
 }
+
+/*footer area*/
+
 .product-card button {
     height: 12%;
     width: 100%;
