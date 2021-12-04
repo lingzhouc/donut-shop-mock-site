@@ -4,7 +4,7 @@
     margin: 0px;
 }
 
-header { text-align: center; height: 268px;}
+header { text-align: center; }
 
 header img { width: 50%; max-width: 500px;}
 
@@ -14,10 +14,10 @@ nav {
     margin: 25px 15px;
     font-family: 'Yrsa', serif;
     font-size: 20px;
-    border: 2px solid #ffc66b; 
+    border: 3px solid #ffc66b; 
 }
 
-nav a { color: black; padding: 8px 0px; transition: all 500ms;}
+nav a { color: #414141; padding: 8px 0px; transition: all 500ms;}
 
 nav a:hover, nav a:focus { color:#ffc66b; }
 
@@ -28,15 +28,21 @@ a { text-decoration: none; }
 .donuts-doorsteps {
     background-color: white;
     font-family: 'Nunito Sans', sans-serif;
+    margin: 0 15px;
+    color: #414141;
 }
 
 .donuts-doorsteps img {
     height: 50%;
+    width: 100%;
     margin: 10px 0;
 }
 
 .order-button {
-    background-color: #62cbff;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(30deg, #ffc66b 50%, #62cbff 50%);
+    background-size: 298%;
+    background-position: 0%;
     font-family: 'Yrsa', serif;
     font-size: 20px;
     border: none;
@@ -44,56 +50,111 @@ a { text-decoration: none; }
     border-radius: 6px;
 }
 
+.order-button:hover, .order-button:focus {
+    background-position: 100%;
+}
+
 .order-button a {
-    color: black;
+    color: #414141;
 }
 
 .about-us {
-    
+    border: 3px solid #ffc66b;
+    margin: 25px 15px;
+    padding: 8px 15px;
+    color: #414141;
+}
+
+.about-us h2{
+    font-family: 'Yrsa', serif;
+    padding-bottom: 5px;
+}
+
+.about-us p {
+    font-family: 'Nunito Sans', sans-serif;
+    padding-bottom: 12px;
 }
 
 .about-us a {
-    color: black;
+    color: #414141;
     text-decoration-line: underline;
 }
 
 .home-gallery {
     display: flex;
     flex-wrap: wrap;
+    padding: 15px;
 }
 
 .home-gallery-item {
     display: flex;
     flex-direction: column;
-    height: 250px;
-    width: 200px;
-    margin: 10px;
+    height: 175px;
+    width: 160px;
+    max-width: 175px;
+    margin: 15px auto;
     border: 1px solid white;
     border-radius: 6px;
 }
 
-.home-gallery-item button:hover, .home-gallery-item button:focus {
-    background-color: #a06333;
-}
-
 .home-gallery-item img {
-    height: 80%;
+    height: 140px;
     width: 100%;
     border-radius: 6px;
 }
 
 .home-gallery-item button {
-    height: 18%;
+    height: 30px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
     border: none;
     border-radius: 6px;
-    background-color: #3a1c13;
-    color: white;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(30deg, #ffbd53 50%, #62cbff 50%);
+    background-size: 298%;
+    background-position: 0%;
+    color: #414141;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: bolder;
+    font-weight: 600;
+    font-size: 12px;
 }
 
+.home-gallery-item button:hover, .home-gallery-item button:focus {
+    background-position: 100%;
+}
+
+/* footer */
+footer {
+    margin: 15px;
+}
+
+.store-info {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #ffbd53;
+    color: #414141;
+}
+
+.store-info h3 {
+    font-family: 'Yrsa', serif;
+}
+
+.store-info p, span a {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #414141;
+}
+
+span a {font-weight: bolder;} 
+
+.store-info-item {
+    margin: 15px;
+}
+
+.store-info-item span {
+    padding-left: 25px;
+}
+
+/* gallery page */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -156,25 +217,6 @@ a { text-decoration: none; }
     grid-area: five;
 }
 
-footer {
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "address hours contact socials";
-    margin: 10px;
-}
-.address {
-    grid-area: address;
-}
-.hours {
-    grid-area: hours;
-}
-.contact {
-    grid-area: contact;
-}
-.socials {
-    grid-area: socials;
-}
 .addtocart {
     cursor: pointer;
     min-width: 90%;
@@ -210,6 +252,7 @@ footer {
 .flexcnt {
     display: flex;
 }
+
 @media screen and (min-width: 540px) {
     .products {
         display: grid;
