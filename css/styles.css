@@ -109,16 +109,16 @@ a { text-decoration: none; }
 
 .products {
     display: grid;
-    grid-template-columns: 0.5fr 5fr 0.5fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        ". donut ."
-        ". granola ."
-        ". coffee ."
-        ". one ."
-        ". two ."
-        ". three ."
-        ". four ."
-        ". five .";
+        "donut"
+        "granola"
+        "coffee"
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
 }
 
 .product-card {
@@ -204,11 +204,14 @@ footer {
     color: #FE9A50;
     border-color: #23B7FF;
 }
-.shopcnt {
+.shopcnt img{
     width: 45%;
+    margin: 20px;
+    border-radius: 10px;
 }
 .flexcnt {
     display: flex;
+    width: 100%;
 }
 @media screen and (min-width: 540px) {
     .products {
