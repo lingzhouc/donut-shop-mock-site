@@ -207,6 +207,45 @@ footer {
     display: flex;
     width: 100%;
 }
+
+/*checkout css^*/
+
+/*complete page css*/
+
+.complete{
+    
+    width: 80%;
+    background: coral;
+    display: flex-columns;
+    padding: 40px 20px; 
+   box-sizing: border-box;
+   margin: auto;
+   margin-bottom: 10%;
+   border-radius: 15%;
+}
+.complete h1{
+ 
+padding: 2rem;
+padding-top: 0%;
+text-align: center;
+}
+
+.complete h2{
+    padding: 2rem;
+padding-top: 0%;
+text-align: center;
+font-size: 100%;
+}
+
+.complete img{
+    
+    width: 90%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    max-width: 500px;
+}
+/*complete page css^*/
+
 @media screen and (min-width: 540px) {
     .products {
         display: grid;
@@ -219,6 +258,10 @@ footer {
     }
     .product-card {
         margin: 25px;
+    }
+    
+     .complete{
+        margin-top: 5%;
     }
 }
 @media screen and (min-width: 720px) {
