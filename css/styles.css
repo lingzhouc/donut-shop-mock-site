@@ -299,8 +299,12 @@ footer {
     align-self: flex-start;
 }
 
+.check {
+    width: 500px;
+}
 .shopcnt a{
-    margin-right: 30%;
+    margin: auto;
+    width: 100%;
     padding: 0.7rem 8%;
     border: none;
     border-radius: 5%;
