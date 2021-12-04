@@ -258,11 +258,51 @@ footer p{
     margin: 20px;
     border-radius: 10px;
 }
+/* athlete shirt*/
+
 .flexcnt {
     display: flex;
     width: 100%;
+    background:#FE9A50;
+    padding-top: 10%;
+    padding-bottom: 10%;
+   border-radius: 15px;
+    
 }
 
+.flexcnt h2{
+    padding-top: 20%;
+    text-align: center;
+    font-size: 150%;
+   
+}
+
+.flexcnt img{
+    width: 50vw;
+}
+
+.flexcnt a{
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-right: 30%;
+    padding: 0.5rem 8%;
+    border: 1px #FBF3D7 solid;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.flexcnt a:hover{
+
+    background: #23B7Ff;
+
+}
+
+/* athlete shirt^*/
 
 /*checkout css*/
 
