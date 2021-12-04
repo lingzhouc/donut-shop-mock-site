@@ -96,11 +96,15 @@ a { text-decoration: none; }
     margin-right: 1.5%;
 }
 
+.home-gallery-item img {
+    height: 150px;
+}
+
 .home-gallery-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
     max-width: 175px;
+    width: 150px;
     margin: 10px auto;
     border: 1px solid white;
     border-radius: 6px;
