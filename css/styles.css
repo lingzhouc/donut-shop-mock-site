@@ -299,12 +299,8 @@ footer {
     align-self: flex-start;
 }
 
-.check {
-    width: 500px;
-}
 .shopcnt a{
     margin: auto;
-    width: 100%;
     padding: 0.7rem 8%;
     border: none;
     border-radius: 5%;
@@ -359,21 +355,25 @@ form img {
 form {
     font-family: 'Yrsa';
 }
-form a {
-    margin-left: 375px;
-    margin-bottom: 100px;
-    padding: 0.5rem 8%;
+
+.form-wrapper button {
+    width: 100%;
+    padding: 0.9rem 8%;
     border: none;
     border-radius: 5%;
     text-decoration: none;
-    background-color: #FD9AC7;
-    transition: background 500ms ease;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(30deg, #ffbd53 50%, #62cbff 50%);
+    background-size: 298%;
+    background-position: 100%;
     text-align: center;
     font-family: "Yrsa";
+    color: #414141;
+    font-weight: bolder;
 }
-form a:hover, form a:focus {
+
+.form-wrapper button:hover, .form-wrapper button:focus {
     background-position: 0%;
-    background: #23B7Ff;
 
 }
 input[type="text"], input[type="email"],input[type="tel"],textarea, select {
