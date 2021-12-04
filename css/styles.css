@@ -496,6 +496,15 @@ font-family: 'Nunito Sans';
         display: flex;
         justify-content: center;
     }
+    .productimg img{
+        width: 30vw;
+    }
+    .label {
+        font-size: 150%;
+    }
+    .price {
+        margin-top: 0;
+    }
 }
 @media screen and (min-width: 720px) {
     .products {
