@@ -134,6 +134,7 @@ footer {
 .store-info {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     border: 3px solid #ffbd53;
     border-radius: 6px;
     color: #414141;
@@ -151,41 +152,44 @@ footer {
 store-info-item span {
     padding-left: 25px;
 }
-
+store-info-item h3 p a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /*gallery page*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    background: #FE9A50 ;
-    padding-top: 10%;
+    background: #FBF3D7 ;
+    padding-top: 2%;
     border-radius: 15px;
-   
+    margin: 1%;
 }
 
 .gallery-item {
-    width: 250px;
+    width: 90%;
     padding: 1%;
-    
-    
+    margin: 0 auto;
 }
 
 .gallery-item img {
     width: 100%;
     border-radius: 10px;
-    
 }
 
 .gallery h1{
     padding-bottom: 5%;
-    padding-left: 7%;
+    padding-left: 4%;
     font-size: 400%;
     text-align: center;
+    font-family: 'Yrsa';
 }
 
 .gallery p{
     padding-bottom: 5%;
     padding-left: 25%;
-    
+    padding-left: 21%;
+    font-family: 'Nunito Sans';
 }
 /*gallery page^*/
 
@@ -193,6 +197,10 @@ store-info-item span {
 .products {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #FBF3D7;
+    margin: 10px;
+    border: 6px;
 }
 
 .product-card {
@@ -254,7 +262,7 @@ store-info-item span {
 /*footer area*/
 
 .product-card button {
-    height: 12%;
+    height: 30px;
     width: 100%;
     margin-top: 10px;
     border: none;
@@ -271,6 +279,30 @@ store-info-item span {
 }
 .product-card button a {
     color: white;
+}
+.shopcnt button {
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a1c13;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+}
+.shopcnt button:hover, .shopcnt button:focus {
+    background-color: #a06333;
+}
+.shopcnt button a {
+    color: white;
+}
+.shopcnt {
+    display: flex;
+    width: 100%;
+    background-color:#FE9A50;
+    border-radius: 15px;
+    flex-wrap: wrap;
 }
 .product-card h2, .product-card p {
     font-family: 'Yrsa', serif;
@@ -305,36 +337,33 @@ footer {
     grid-area: socials;
 }
 
-.flexcnt h2{
+.shopcnt h2{
     padding-top: 20%;
     text-align: center;
     font-size: 150%;
-   
+    font-family: "Yrsa";
 }
 
-.flexcnt img{
+.shopcnt img{
     width: 50vw;
 }
 
-.flexcnt a{
+.shopcnt a{
     justify-self: flex-end;
     align-self: flex-end;
     margin-right: 30%;
     padding: 0.5rem 8%;
-    border: 1px #FBF3D7 solid;
-    border-radius: 50px;
+    border: none;
+    border-radius: 6px;
     text-decoration: none;
-    color: #333;
+    background-color: #FD9AC7;
     transition: background 500ms ease;
-    font-weight: bold;
     text-align: center;
-
+    font-family: "Yrsa";
 }
 
-.flexcnt a:hover{
-
+.shopcnt a:hover, .shopcnt a:focus{
     background: #23B7Ff;
-
 }
 
 /* athlete shirt^*/
@@ -355,20 +384,6 @@ footer {
   
 }
 
-
-.form-wrapper img{
-
-  
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding-bottom: 5%;
-    
-  
-
-
-}
 .form-wrapper h1{
     
    color: black; 
@@ -382,41 +397,45 @@ footer {
   padding-top: 5%;
 
 }
-input{width: 100%; 
-  background: none; 
-  border: 1.5px solid #FBF3D7 ;
-   
-   padding: 6px 15px;
-   border-radius: 3px; 
-    box-sizing: border-box;
-     margin-bottom: 20px; 
-     font-size: 16px;
-      color: #fff;}
-
-
-
-
+form {
+    font-family: 'Yrsa';
+}
+input[type="text"], input[type="email"],input[type="tel"],textarea, select {
+    background: #FBF3D7;
+    border: 2px solid transparent;
+    margin: 5px;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+}
+input:hover, 
+input:focus, textarea:hover, textarea:focus {
+  border: 2px solid #23B7FF;
+}
 ::placeholder{
     color: #FBF3D7;
+    color: #A16336;
+    font-family: "Nunito Sans";
 }
 
 .form-wrapper a{
-    padding: 0.5rem 2rem;
-    border: 1px #FBF3D7 solid;
-    display: inline-block;
-    margin: 2rem 0 0;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #333;
-    transition: background 500ms ease;
-    padding-left: 40%;
-    padding-right: 40%;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a1c13;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
     }
 
-.form-wrapper a:hover{
-    background: #23B7Ff;
-    
-}
+    .form-wrapper a:hover, .form-wrapper a:focus {
+        background-color: #a06333;
+    }
+    .form-wrapper a {
+        color: white;
+    }
 
 
 /*checkout css^*/
@@ -425,13 +444,13 @@ input{width: 100%;
 
 .complete{
     
-    width: 80%;
+    width: 85%;
     background: #FE9A50;
     display: flex-columns;
     padding: 40px 20px; 
    box-sizing: border-box;
    margin: auto;
-   margin-bottom: 10%;
+   margin-bottom: 5%;
    border-radius: 15px;
 }
 .complete h1{
@@ -439,6 +458,7 @@ input{width: 100%;
 padding: 2rem;
 padding-top: 0%;
 text-align: center;
+font-family: 'Yrsa';
 }
 
 .complete h2{
@@ -446,6 +466,8 @@ text-align: center;
 padding-top: 0%;
 text-align: center;
 font-size: 100%;
+font-family: 'Nunito Sans';
+
 }
 
 .complete img{
@@ -459,37 +481,36 @@ font-size: 100%;
 
 @media screen and (min-width: 540px) {
     .products {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "donut granola"
-            "coffee one"
-            "two three"
-            "four five";
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .product-card {
         margin: 25px;
+        width: 40%;
     }
     
      .complete{
         margin-top: 5%;
     }
-    .donuts-doorsteps img {
-        width: 75%;
-        height: 50%;
+    .gallery-item {
+        width: 50%;
+    }
+    .gallery p {
+        padding-left: 5%;
     }
 }
 @media screen and (min-width: 720px) {
     .products {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "donut granola coffee"
-            "one two three"
-            "four five .";
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .product-card {
         margin: 25px;
+        width: 27%;
     }
     .donuts-doorsteps img {
         width: 50%;
@@ -500,5 +521,11 @@ font-size: 100%;
     }
     .home-gallery {
         margin-bottom: 10px;
+    }
+    .gallery-item {
+        width: 33%;
+    }
+    .gallery p {
+        padding-left: 10%;
     }
 }
