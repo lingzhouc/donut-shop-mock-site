@@ -34,7 +34,7 @@ a { text-decoration: none; }
     color: #414141;
 }
 
-.about-us h1 {
+.about-us h2 {
     font-family: 'Yrsa';
     padding-bottom: 5px;
 
@@ -48,7 +48,6 @@ a { text-decoration: none; }
     width: 100%;
     height: 50%;
     width: 100%;
-    margin: 10px 0;
 }
 
 .order-button {
@@ -80,7 +79,7 @@ a { text-decoration: none; }
     justify-content: center;
     background-color: #FBF3D7;
     border-radius: 6px;
-    margin: 15px 10px;
+    margin: 15px 20px;
     margin-left: 1.5%;
     margin-right: 1.5%;
 }
@@ -88,10 +87,9 @@ a { text-decoration: none; }
 .home-gallery-item {
     display: flex;
     flex-direction: column;
-    height: 175px;
-    width: 160px;
+    width: 100%;
     max-width: 175px;
-    margin: 15px auto;
+    margin: 10px auto;
     border: 1px solid white;
     border-radius: 6px;
 }
@@ -101,7 +99,6 @@ a { text-decoration: none; }
 }
 
 .home-gallery-item img {
-    height: 140px;
     width: 100%;
     border-radius: 6px;
 }
@@ -128,16 +125,20 @@ a { text-decoration: none; }
 
 /* footer */
 footer {
+    display: flex;
     margin: 15px;
+    justify-content: center;
 }
 
 .store-info {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     border: 3px solid #ffbd53;
     border-radius: 6px;
     color: #414141;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .store-info h3 {
@@ -149,12 +150,15 @@ footer {
     font-weight: bolder;
     color: #414141;
 }
-store-info-item span {
+.store-info-item span {
     padding-left: 25px;
 }
-store-info-item h3 p a{
+.store-info-item h3 p a{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.store-info-item {
+    margin: 10px;
 }
 /*gallery page*/
 .gallery {
@@ -299,10 +303,10 @@ store-info-item h3 p a{
 }
 .shopcnt {
     display: flex;
+    flex-direction: column;
     width: 100%;
     background-color:#FE9A50;
     border-radius: 15px;
-    flex-wrap: wrap;
 }
 .product-card h2, .product-card p {
     font-family: 'Yrsa', serif;
@@ -311,31 +315,11 @@ store-info-item h3 p a{
     font-size:larger;
 }
 .shopcnt img{
-    width: 45%;
     margin: 20px;
     border-radius: 10px;
 }
 /* athlete shirt*/
 
-footer {
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "address hours contact socials";
-    margin: 10px;
-}
-.address {
-    grid-area: address;
-}
-.hours {
-    grid-area: hours;
-}
-.contact {
-    grid-area: contact;
-}
-.socials {
-    grid-area: socials;
-}
 
 .shopcnt h2{
     padding-top: 20%;
@@ -345,12 +329,11 @@ footer {
 }
 
 .shopcnt img{
-    width: 50vw;
+    width: 90vw;
+    align-self: center;
 }
 
 .shopcnt a{
-    justify-self: flex-end;
-    align-self: flex-end;
     margin-right: 30%;
     padding: 0.5rem 8%;
     border: none;
@@ -372,7 +355,7 @@ footer {
 
 
 .form-wrapper{
-     width: 80%;
+     width: 90%;
      display: flex-column;
      background: #FE9A50;
    padding: 40px 20px; 
@@ -380,8 +363,10 @@ footer {
    margin: auto;
    margin-top: 10%;
    border-radius: 10px;
-   margin-bottom: 10%;
-  
+   margin-bottom: 10%;  
+}
+form img {
+    width: 100%;
 }
 
 .form-wrapper h1{
@@ -499,6 +484,10 @@ font-family: 'Nunito Sans';
     }
     .gallery p {
         padding-left: 5%;
+    }
+    .store-info {
+        display: flex;
+        justify-content: center;
     }
 }
 @media screen and (min-width: 720px) {
