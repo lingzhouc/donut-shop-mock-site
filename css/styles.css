@@ -212,16 +212,16 @@ footer {
 
 /*complete page css*/
 
-.complete{
+..complete{
     
     width: 80%;
-    background: coral;
+    background: #FE9A50;
     display: flex-columns;
     padding: 40px 20px; 
    box-sizing: border-box;
    margin: auto;
    margin-bottom: 10%;
-   border-radius: 15%;
+   border-radius: 15px;
 }
 .complete h1{
  
