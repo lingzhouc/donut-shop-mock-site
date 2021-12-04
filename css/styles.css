@@ -306,7 +306,8 @@ footer {
     flex-direction: column;
     width: 100%;
     background-color:#FE9A50;
-    border-radius: 15px;
+    border-radius: 5%;
+    overflow: hidden;
 }
 .product-card h2, .product-card p {
     font-family: 'Yrsa', serif;
@@ -314,30 +315,36 @@ footer {
 .product-card p {
     font-size:larger;
 }
-.shopcnt img{
-    margin: 20px;
-    border-radius: 10px;
+.productimg img{
+    margin: 5%;
+    border-radius: 3%;
 }
 /* athlete shirt*/
-
-
-.shopcnt h2{
-    padding-top: 20%;
-    text-align: center;
-    font-size: 150%;
+.price {
+    font-family: 'Yrsa';
+    margin: 2%;
+}
+.check {
+    align-content: space-around;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+.label{
+    font-size: 100%;
     font-family: "Yrsa";
+    margin: 1% 2%;
 }
 
-.shopcnt img{
+.productimg img{
     width: 90vw;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .shopcnt a{
     margin-right: 30%;
     padding: 0.5rem 8%;
     border: none;
-    border-radius: 6px;
+    border-radius: 5%;
     text-decoration: none;
     background-color: #FD9AC7;
     transition: background 500ms ease;
