@@ -4,7 +4,7 @@
     margin: 0px;
 }
 
-header { text-align: center; height: 268px;}
+header { text-align: center;}
 
 header img { width: 50%; max-width: 500px;}
 
@@ -17,11 +17,10 @@ nav {
     border: 2px solid #ef6593; 
     border-radius: 6px;
     background-color: #ef6593;
-    border: 2px solid #ffc66b; 
+    border: 3px solid #ffc66b; 
 }
 
-nav a { color: black; padding: 8px 0px; transition: all 500ms;}
-
+nav a { color: #414141; padding: 8px 0px; transition: all 500ms;}
 nav a:hover, nav a:focus { color:#ffc66b; }
 
 nav a:active { color: #ffa216; }
@@ -31,16 +30,24 @@ a { text-decoration: none; }
 .donuts-doorsteps {
     background-color: white;
     font-family: 'Nunito Sans', sans-serif;
+    margin: 15px;
+    color: #414141;
 }
 
 .about-us h1 {
     font-family: 'Yrsa';
+    padding-bottom: 5px;
+
 }
 .about-us p {
-    font-family: 'Nunito Sans';
+    padding-bottom: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+
 }
 .donuts-doorsteps img {
+    width: 100%;
     height: 50%;
+    width: 100%;
     margin: 10px 0;
 }
 
@@ -58,14 +65,14 @@ a { text-decoration: none; }
 }
 
 .about-us a {
-    color: black;
+    color: #414141;
     text-decoration-line: underline;
 }
 .about-us {
-    margin: 5px 10px;
-    background-color: #FE9A50;
-    border-radius: 6px;
-    padding: 10px;
+    border: 3px solid #ffc66b;
+    margin: 25px 15px;
+    padding: 8px 15px;
+    color: #414141;
 }
 .home-gallery {
     display: flex;
@@ -81,9 +88,10 @@ a { text-decoration: none; }
 .home-gallery-item {
     display: flex;
     flex-direction: column;
-    height: 250px;
-    width: 200px;
-    margin: 10px;
+    height: 175px;
+    width: 160px;
+    max-width: 175px;
+    margin: 15px auto;
     border: 1px solid white;
     border-radius: 6px;
 }
@@ -93,21 +101,25 @@ a { text-decoration: none; }
 }
 
 .home-gallery-item img {
-    height: 80%;
+    height: 140px;
     width: 100%;
     border-radius: 6px;
 }
 
 .home-gallery-item button {
-    height: 18%;
+    height: 30px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
     border: none;
     border-radius: 6px;
-    background-color: #3a1c13;
-    color: white;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(30deg, #ffbd53 50%, #62cbff 50%);
+    background-size: 298%;
+    background-position: 0%;
+    color: #414141;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: bolder;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .home-gallery-item button:hover, .home-gallery-item button:focus {
@@ -134,14 +146,18 @@ footer {
 .store-info p, span a {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
+    color: #414141;
+}
+store-info-item span {
+    padding-left: 25px;
 }
 
 /*gallery page*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    background: #FBF3D7 ;
-    padding-top: 2%;
+    background: #FE9A50 ;
+    padding-top: 10%;
     border-radius: 15px;
    
 }
@@ -175,22 +191,13 @@ footer {
 
 
 .products {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "donut"
-        "granola"
-        "coffee"
-        "one"
-        "two"
-        "three"
-        "four"
-        "five";
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-card {
-    margin: 5px;
-    margin-bottom: 25px;
+    margin: 15px;
+    padding: 20px 0 20px 0;
 }
 
 .product-card img{
@@ -198,37 +205,7 @@ footer {
     border-radius: 10px;
 }
 
-/* footer area
-footer {
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "address hours contact socials";
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 2.5%;
-}
 
-footer h3{
-    padding: auto;
-    text-align: center;
-    padding-bottom: 1rem;
-    font-family: 'Yrsa';
-    font-size: larger;
-}
-
-footer p{
-    padding: auto;
-    text-align: center;
-    font-family: 'Nunito Sans';
-    font-size: medium;
-}
-footer a {
-    padding: auto;
-    font-family: 'Nunito Sans';
-    font-size: x-small;
-    margin-left: 10%;
-}*/
 .address {
     grid-area: address;
     border: #23B7Ff solid;
@@ -284,6 +261,8 @@ footer a {
     border-radius: 6px;
     background-color: #3a1c13;
     color: white;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
 }
@@ -324,23 +303,6 @@ footer {
 }
 .socials {
     grid-area: socials;
-}
-.addtocart {
-    cursor: pointer;
-    min-width: 90%;
-    padding: 10px 20px;
-    position: relative;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 1%;
-    display: flex;
-    width: 100%;
-    background:#FE9A50;
-    padding-top: 10%;
-    padding-bottom: 10%;
-   border-radius: 15px;
-    
 }
 
 .flexcnt h2{
