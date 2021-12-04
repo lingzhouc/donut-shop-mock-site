@@ -203,8 +203,8 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #FBF3D7;
-    margin: 10px;
-    border: 6px;
+    margin: 1%;
+    border-radius: 6px;
 }
 
 .product-card {
