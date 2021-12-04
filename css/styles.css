@@ -116,45 +116,51 @@ a { text-decoration: none; }
     display: flex;
     flex-wrap: wrap;
     background: #FE9A50 ;
-    padding-top: 2%;
+    padding-top: 10%;
     border-radius: 15px;
-    margin: 1%;
+   
 }
 
 .gallery-item {
-    width: 90%;
+    width: 250px;
     padding: 1%;
-    margin: 0 auto;
+    
+    
 }
 
 .gallery-item img {
     width: 100%;
-    border-radius: 10px; 
+    border-radius: 10px;
+    
 }
 
 .gallery h1{
     padding-bottom: 5%;
-    padding-left: 4%;
+    padding-left: 7%;
     font-size: 400%;
     text-align: center;
-    font-family: 'Yrsa';
 }
 
 .gallery p{
     padding-bottom: 5%;
-    padding-left: 21%;
-    font-family: 'Nunito Sans';
+    padding-left: 25%;
+    
 }
 /*gallery page^*/
 
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #FBF3D7;
-    margin: 10px;
-    border: 6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "donut"
+        "granola"
+        "coffee"
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
 }
 
 .product-card {
@@ -167,15 +173,40 @@ a { text-decoration: none; }
     border-radius: 10px;
 }
 
+.donut {
+    grid-area: donut;
+}
+.granola {
+    grid-area: granola;
+}
+.coffee {
+    grid-area: coffee;
+}
+.he {
+    grid-area: one;
+}
+.lngray {
+    grid-area: two;
+}
+.lnnavy {
+    grid-area: three;
+}
+.athlete {
+    grid-area: four;
+}
+.hn {
+    grid-area: five;
+}
+
 /* footer area*/
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "address hours contact socials";
     margin-top: 3%;
     margin-bottom: 3%;
-    justify-content: center;
-    gap: 10px;
+    margin-left: 2.5%;
 }
 
 footer h3{
@@ -183,20 +214,14 @@ footer h3{
     text-align: center;
     padding-bottom: 1rem;
     font-family: 'Yrsa';
-    font-size: x-large;
+    font-size: larger;
 }
 
 footer p{
     padding: auto;
     text-align: center;
     font-family: 'Nunito Sans';
-    font-size: medium;
-}
-footer a {
-    padding: auto;
-    font-family: 'Nunito Sans';
-    font-size: x-small;
-    margin-left: 10%;
+    font-size: smaller
 }
 .address {
     grid-area: address;
@@ -246,7 +271,7 @@ footer a {
 /*footer area*/
 
 .product-card button {
-    height: 30px;
+    height: 12%;
     width: 100%;
     margin-top: 10px;
     border: none;
@@ -262,31 +287,11 @@ footer a {
 .product-card button a {
     color: white;
 }
-.shopcnt button {
-    height: 30px;
-    width: 100%;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #3a1c13;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bolder;
-}
-.shopcnt button:hover, .shopcnt button:focus {
-    background-color: #a06333;
-}
-.shopcnt button a {
-    color: white;
-}
 .product-card h2, .product-card p {
     font-family: 'Yrsa', serif;
 }
 .product-card p {
     font-size:larger;
-}
-.shopcnt {
-    background-color:#FE9A50;
 }
 .shopcnt img{
     width: 45%;
@@ -295,41 +300,44 @@ footer a {
 }
 /* athlete shirt*/
 
-.shopcnt {
+.flexcnt {
     display: flex;
     width: 100%;
+    background:#FE9A50;
+    padding-top: 10%;
+    padding-bottom: 10%;
    border-radius: 15px;
-   flex-wrap: wrap;
+    
 }
 
-.shopcnt h2{
+.flexcnt h2{
     padding-top: 20%;
     text-align: center;
     font-size: 150%;
-    font-family: "Yrsa";
+   
 }
-.shopcnt p {
-    font-family: "Nunito Sans";
-}
-.shopcnt img{
+
+.flexcnt img{
     width: 50vw;
 }
 
-.shopcnt a{
+.flexcnt a{
     justify-self: flex-end;
     align-self: flex-end;
     margin-right: 30%;
     padding: 0.5rem 8%;
-    border: none;
-    border-radius: 6px;
+    border: 1px #FBF3D7 solid;
+    border-radius: 50px;
     text-decoration: none;
-    background-color: #FD9AC7;
+    color: #333;
     transition: background 500ms ease;
+    font-weight: bold;
     text-align: center;
-    font-family: "Yrsa";
+
 }
 
-.shopcnt a:hover, .shopcnt a:focus{
+.flexcnt a:hover{
+
     background: #23B7Ff;
 
 }
@@ -351,6 +359,21 @@ footer a {
    margin-bottom: 10%;
   
 }
+
+
+.form-wrapper img{
+
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 5%;
+    
+  
+
+
+}
 .form-wrapper h1{
     
    color: black; 
@@ -364,45 +387,41 @@ footer a {
   padding-top: 5%;
 
 }
-form {
-    font-family: 'Yrsa';
-}
-input[type="text"], input[type="email"],input[type="tel"],textarea, select {
-    background: #FBF3D7;
-    border: 2px solid transparent;
-    margin: 5px;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-}
-input:hover, 
-input:focus, textarea:hover, textarea:focus {
-  border: 2px solid #23B7FF;
-}
+input{width: 100%; 
+  background: none; 
+  border: 1.5px solid #FBF3D7 ;
+   
+   padding: 6px 15px;
+   border-radius: 3px; 
+    box-sizing: border-box;
+     margin-bottom: 20px; 
+     font-size: 16px;
+      color: #fff;}
+
+
+
 
 ::placeholder{
-    color: #A16336;
-    font-family: "Nunito Sans";
+    color: #FBF3D7;
 }
 
 .form-wrapper a{
-    height: 30px;
-    width: 100%;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #3a1c13;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bolder;
+    padding: 0.5rem 2rem;
+    border: 1px #FBF3D7 solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+    padding-left: 40%;
+    padding-right: 40%;
     }
 
-    .form-wrapper a:hover, .form-wrapper a:focus {
-        background-color: #a06333;
-    }
-    .form-wrapper a {
-        color: white;
-    }
+.form-wrapper a:hover{
+    background: #23B7Ff;
+    
+}
 
 
 /*checkout css^*/
@@ -411,13 +430,13 @@ input:focus, textarea:hover, textarea:focus {
 
 .complete{
     
-    width: 85%;
+    width: 80%;
     background: #FE9A50;
     display: flex-columns;
     padding: 40px 20px; 
    box-sizing: border-box;
    margin: auto;
-   margin-bottom: 5%;
+   margin-bottom: 10%;
    border-radius: 15px;
 }
 .complete h1{
@@ -425,7 +444,6 @@ input:focus, textarea:hover, textarea:focus {
 padding: 2rem;
 padding-top: 0%;
 text-align: center;
-font-family: 'Yrsa';
 }
 
 .complete h2{
@@ -433,7 +451,6 @@ font-family: 'Yrsa';
 padding-top: 0%;
 text-align: center;
 font-size: 100%;
-font-family: 'Nunito Sans';
 }
 
 .complete img{
@@ -447,14 +464,16 @@ font-family: 'Nunito Sans';
 
 @media screen and (min-width: 540px) {
     .products {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "donut granola"
+            "coffee one"
+            "two three"
+            "four five";
     }
     .product-card {
         margin: 25px;
-        width: 40%;
     }
     
      .complete{
@@ -464,23 +483,18 @@ font-family: 'Nunito Sans';
         width: 75%;
         height: 50%;
     }
-    .gallery-item {
-        width: 50%;
-    }
-    .gallery p {
-        padding-left: 5%;
-    }
 }
 @media screen and (min-width: 720px) {
     .products {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "donut granola coffee"
+            "one two three"
+            "four five .";
     }
     .product-card {
         margin: 25px;
-        width: 27%;
     }
     .donuts-doorsteps img {
         width: 50%;
@@ -491,11 +505,5 @@ font-family: 'Nunito Sans';
     }
     .home-gallery {
         margin-bottom: 10px;
-    }
-    .gallery-item {
-        width: 33%;
-    }
-    .gallery p {
-        padding-left: 10%;
     }
 }
