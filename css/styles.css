@@ -188,6 +188,12 @@ footer {
     color: #FE9A50;
     border-color: #23B7FF;
 }
+.shopcnt {
+    width: 45%;
+}
+.flexcnt {
+    display: flex;
+}
 @media screen and (min-width: 540px) {
     .products {
         display: grid;
