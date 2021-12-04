@@ -18,6 +18,10 @@
 a {
     text-decoration: none;
 }
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
 a:hover {
     color: orange;
 }
