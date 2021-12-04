@@ -352,6 +352,23 @@ form img {
 form {
     font-family: 'Yrsa';
 }
+form a {
+    margin-left: 375px;
+    margin-bottom: 100px;
+    padding: 0.5rem 8%;
+    border: none;
+    border-radius: 5%;
+    text-decoration: none;
+    background-color: #FD9AC7;
+    transition: background 500ms ease;
+    text-align: center;
+    font-family: "Yrsa";
+}
+form a:hover, form a:focus {
+    background-position: 0%;
+    background: #23B7Ff;
+
+}
 input[type="text"], input[type="email"],input[type="tel"],textarea, select {
     background: #FBF3D7;
     border: 2px solid transparent;
@@ -369,25 +386,6 @@ input:focus, textarea:hover, textarea:focus {
     color: #A16336;
     font-family: "Nunito Sans";
 }
-
-.form-wrapper a{
-    height: 30px;
-    width: 100%;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #3a1c13;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bolder;
-    }
-
-    .form-wrapper a:hover, .form-wrapper a:focus {
-        background-color: #a06333;
-    }
-    .form-wrapper a {
-        color: white;
-    }
 
 
 /*checkout css^*/
