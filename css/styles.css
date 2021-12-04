@@ -11,7 +11,7 @@ header img { width: 50%; max-width: 500px;}
 nav {
     display: flex;
     justify-content: space-around;
-    margin: 25px 15px;
+    margin: 5px;
     font-family: 'Yrsa', serif;
     font-size: 20px;
     border: 3px solid #ffc66b; 
@@ -32,7 +32,14 @@ a { text-decoration: none; }
     color: #414141;
 }
 
+.about-us h1 {
+    font-family: 'Yrsa';
+}
+.about-us p {
+    font-family: 'Nunito Sans';
+}
 .donuts-doorsteps img {
+    width: 100%;
     height: 50%;
     width: 100%;
     margin: 10px 0;
@@ -78,6 +85,11 @@ a { text-decoration: none; }
 .about-us a {
     color: #414141;
     text-decoration-line: underline;
+}
+.about-us {
+    margin: 5px 10px;
+    border-radius: 6px;
+    padding: 10px;
 }
 
 .home-gallery {
@@ -158,28 +170,47 @@ span a {font-weight: bolder;}
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    background: #FE9A50 ;
+    padding-top: 10%;
+    border-radius: 15px;
 }
 
 .gallery-item {
     width: 250px;
+    padding: 1%;
 }
 
 .gallery-item img {
     width: 100%;
+    border-radius: 10px;
 }
+
+.gallery h1{
+    padding-bottom: 5%;
+    padding-left: 7%;
+    font-size: 400%;
+    text-align: center;
+}
+
+.gallery p{
+    padding-bottom: 5%;
+    padding-left: 25%;
+    
+}
+/*gallery page^*/
 
 .products {
     display: grid;
-    grid-template-columns: 0.5fr 5fr 0.5fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        ". donut ."
-        ". granola ."
-        ". coffee ."
-        ". one ."
-        ". two ."
-        ". three ."
-        ". four ."
-        ". five .";
+        "donut"
+        "granola"
+        "coffee"
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
 }
 
 .product-card {
@@ -233,25 +264,200 @@ span a {font-weight: bolder;}
     color: #f1f1f1;
     font-size: 1rem;
     text-decoration: none;
+}
+
+.product-card button {
+    height: 12%;
+    width: 100%;
+    margin-top: 10px;
     border: none;
-    outline: none;
-    background-image: linear-gradient(30deg, #FE9A50 50%, #23B7FF 50%);
-    background-size: 298%;
-    background-repeat: no-repeat;
-    background-position: 0%;
+    border-radius: 6px;
+    background-color: #3a1c13;
+    color: white;
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
 }
-.addtocart:hover {
-    background-position: 100%;
-    color: #FE9A50;
-    border-color: #23B7FF;
+
+.product-card button:hover, .product-card button:focus {
+    background-color: #a06333;
 }
-.shopcnt {
+.product-card button a {
+    color: white;
+}
+.product-card h2, .product-card p {
+    font-family: 'Yrsa', serif;
+}
+.product-card p {
+    font-size:larger;
+}
+.shopcnt img{
     width: 45%;
+    margin: 20px;
+    border-radius: 10px;
 }
+/* athlete shirt*/
+
 .flexcnt {
     display: flex;
+    width: 100%;
+    background:#FE9A50;
+    padding-top: 10%;
+    padding-bottom: 10%;
+   border-radius: 15px;
+    
 }
+
+.flexcnt h2{
+    padding-top: 20%;
+    text-align: center;
+    font-size: 150%;
+   
+}
+
+.flexcnt img{
+    width: 50vw;
+}
+
+.flexcnt a{
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-right: 30%;
+    padding: 0.5rem 8%;
+    border: 1px #FBF3D7 solid;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.flexcnt a:hover{
+
+    background: #23B7Ff;
+
+}
+
+/* athlete shirt^*/
+
+/*checkout css*/
+
+
+.form-wrapper{
+     width: 80%;
+     display: flex-column;
+     background: #FE9A50;
+   padding: 40px 20px; 
+   box-sizing: border-box;
+   margin: auto;
+   margin-top: 10%;
+   border-radius: 10px;
+   margin-bottom: 10%;
+  
+}
+
+
+.form-wrapper img{
+
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 5%;
+    
+  
+
+
+}
+.form-wrapper h1{
+    
+   color: black; 
+   text-align: center;
+    margin-bottom: 20px;}
+
+.form-wrapper p{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding-top: 5%;
+
+}
+input{width: 100%; 
+  background: none; 
+  border: 1.5px solid #FBF3D7 ;
+   
+   padding: 6px 15px;
+   border-radius: 3px; 
+    box-sizing: border-box;
+     margin-bottom: 20px; 
+     font-size: 16px;
+      color: #fff;}
+
+
+
+
+::placeholder{
+    color: #FBF3D7;
+}
+
+.form-wrapper a{
+    padding: 0.5rem 2rem;
+    border: 1px #FBF3D7 solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+    padding-left: 40%;
+    padding-right: 40%;
+    }
+
+.form-wrapper a:hover{
+    background: #23B7Ff;
+    
+}
+
+
+/*checkout css^*/
+
+/*complete page css*/
+
+.complete{
+    
+    width: 80%;
+    background: #FE9A50;
+    display: flex-columns;
+    padding: 40px 20px; 
+   box-sizing: border-box;
+   margin: auto;
+   margin-bottom: 10%;
+   border-radius: 15px;
+}
+.complete h1{
+ 
+padding: 2rem;
+padding-top: 0%;
+text-align: center;
+}
+
+.complete h2{
+    padding: 2rem;
+padding-top: 0%;
+text-align: center;
+font-size: 100%;
+}
+
+.complete img{
+    
+    width: 90%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    max-width: 500px;
+}
+/*complete page css^*/
 
 @media screen and (min-width: 540px) {
     .products {
@@ -266,6 +472,14 @@ span a {font-weight: bolder;}
     .product-card {
         margin: 25px;
     }
+    
+     .complete{
+        margin-top: 5%;
+    }
+    .donuts-doorsteps img {
+        width: 75%;
+        height: 50%;
+    }
 }
 @media screen and (min-width: 720px) {
     .products {
@@ -278,5 +492,15 @@ span a {font-weight: bolder;}
     }
     .product-card {
         margin: 25px;
+    }
+    .donuts-doorsteps img {
+        width: 50%;
+        height: 50%;
+    }
+    .about-us {
+        margin: 10px 20px;
+    }
+    .home-gallery {
+        margin-bottom: 10px;
     }
 }
