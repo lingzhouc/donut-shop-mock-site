@@ -516,6 +516,14 @@ font-family: 'Nunito Sans';
     .price {
         margin-top: 0;
     }
+    
+      .privwrap img{
+        align-self: center;
+       justify-self: center;
+     min-width: 50vw;
+        
+    }
+    
 }
 
 @media screen and (min-width: 600px) {
@@ -530,7 +538,16 @@ font-family: 'Nunito Sans';
     }
     .home-gallery-item {
         margin: 15px auto;
-    }    
+    }  
+    
+      .privwrap img{
+        align-self: center;
+       justify-self: center;
+        
+       margin-left: 3%;
+        min-width: 50vw;
+    }
+
 }
 
 @media screen and (min-width: 720px) {
@@ -576,6 +593,17 @@ font-family: 'Nunito Sans';
     .gallery p {
         padding-left: 10%;
     }
+    
+    .privwrap img{
+       
+        
+        min-width: 50vw;
+        max-width: fit-content;
+        align-self: center;
+       justify-self: center;
+       margin-left: 7%;
+    }
+    
 }
 
 @media screen and (min-width: 900px) {
@@ -585,5 +613,13 @@ font-family: 'Nunito Sans';
     }
     .home-gallery-item button {
         height: 40px;
+    }
+    
+     .privwrap img{
+ 
+        min-width: 50vw;
+        align-self: center;
+       justify-self: center;
+       margin-left: 12%;
     }
 }
